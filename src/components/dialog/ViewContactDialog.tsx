@@ -24,7 +24,7 @@ function ViewContactDialog({ contact }: Props) {
           <EnterFullScreenIcon />
         </Button>
       </DialogTrigger>
-      <DialogContent className="sm:max-w-[425px]">
+      <DialogContent className="sm:max-w-[625px]">
         <DialogHeader>
           <DialogTitle>{contact.name}</DialogTitle>
           <DialogDescription>
