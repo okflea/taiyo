@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Nabla&family=Space+Grotesk:wght@300..700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+  :root {
+    --background: 0 0% 98%;
+    --foreground: 20 14.3% 4.1%;
+    --card: 0 0% 100%;
+    --card-foreground: 20 14.3% 4.1%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 20 14.3% 4.1%;
+    --primary: 2.61 84% 63%;
+    --primary-foreground: 26 83.3% 14.1%;
+    --secondary: 272 41% 81%;
+    --secondary-foreground: 24 9.8% 10%;
+    --muted: 60 4.8% 95.9%;
+    --muted-foreground: 25 5.3% 44.7%;
+    --accent: 60 4.8% 95.9%;
+    --accent-foreground: 24 9.8% 10%;
+    --destructive: 354 71% 55%;
+    --destructive-foreground: 60 9.1% 97.8%;
+    --border: 20 5.9% 90%;
+    --input: 20 5.9% 90%;
+    --ring: 20 14.3% 4.1%;
+    --radius: 0rem;
+  }
+
+.dark {
+  --background: 345 9% 9%;
+  --foreground: 0 0% 100%;
+  --muted: 268 12.5% 12.48%;
+  --muted-foreground: 0 0% 80%;
+  --popover: 268 54.5% 5.07%;
+  --popover-foreground: 0 0% 100%;
+  --card: 268 54.5% 5.07%;
+  --card-foreground: 0 0% 100%;
+  --border: 268 12.5% 12.48%;
+  --input: 268 12.5% 12.48%;
+  --primary: 2.61 84% 63%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 268 25% 39%;
+  --secondary-foreground: 268 16.25% 3.12%;
+  --accent: 268 12.5% 12.48%;
+  --accent-foreground: 0 0% 100%;
+  --destructive: 360 83% 65%;
+  --destructive-foreground: 0 0% 100%;
+  --ring: 268 25% 39%;
+}
+}
+
+/* @layer base { */
+/*   :root { */
+/*     --background: #fafafa; */
+/*     --foreground: #2b2610; */
+/*     --card: #ffffff; */
+/*     --card-foreground: #2b2610; */
+/*     --popover: #ffffff; */
+/*     --popover-foreground: #2b2610; */
+/*     --primary: #f0b429; */
+/*     --primary-foreground: #3b1d02; */
+/*     --secondary: #d0b3ff; */
+/*     --secondary-foreground: #332f2b; */
+/*     --muted: #f7f7f0; */
+/*     --muted-foreground: #746e73; */
+/*     --accent: #f7f7f0; */
+/*     --accent-foreground: #332f2b; */
+/*     --destructive: #d93d3d; */
+/*     --destructive-foreground: #fdfaf5; */
+/*     --border: #e0dcd5; */
+/*     --input: #e0dcd5; */
+/*     --ring: #2b2610; */
+/*     --radius: 0rem; */
+/*   } */
+/**/
+/*   .dark { */
+/*     --background: #2a0c0c; */
+/*     --foreground: #ffffff; */
+/*     --muted: #1c0f1e; */
+/*     --muted-foreground: #cccccc; */
+/*     --popover: #270a2d; */
+/*     --popover-foreground: #ffffff; */
+/*     --card: #270a2d; */
+/*     --card-foreground: #ffffff; */
+/*     --border: #1c0f1e; */
+/*     --input: #1c0f1e; */
+/*     --primary: #3e2a66; */
+/*     --primary-foreground: #ffffff; */
+/*     --secondary: #f4a742; */
+/*     --secondary-foreground: #070107; */
+/*     --accent: #1c0f1e; */
+/*     --accent-foreground: #ffffff; */
+/*     --destructive: #ff3333; */
+/*     --destructive-foreground: #ffffff; */
+/*     --ring: #3e2a66; */
+/*   } */
+/* } */
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+::-webkit-scrollbar {
+width: 3px
+}
+
+::-webkit-scrollbar-horizontal {
+height: 2px
+}
+
+::-webkit-scrollbar-track {
+background: transparent
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-blue-400 dark:bg-blue-600
+}
+.task > ::webkit-scrollbar-thumb {
+  @apply bg-green-300 dark:bg-green-500
+}
+
+
+.gradient-heading {
+	@apply bg-clip-text text-transparent box-decoration-clone;
+	@apply bg-gradient-to-br;
+	@apply from-primary  to-secondary;
+}
