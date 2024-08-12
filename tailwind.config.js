@@ -24,7 +24,7 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        nabla: ['Nabla', 'sans-serif'],
+        arvo: ['Arvo', 'serif'],
         sans: ['Space Grotesk', 'sans-serif']
       },
       colors: {
