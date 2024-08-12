@@ -5,7 +5,7 @@ import NavbarSidebar from "@/components/NavbarSidebar"
 import { CardBody, CardContainer, CardItem } from "@/components/ui/3d-card"
 import { Button } from "@/components/ui/button"
 import { contactAtom } from "@/store/atoms"
-import { Pencil2Icon } from "@radix-ui/react-icons"
+import { CrossCircledIcon, Pencil2Icon } from "@radix-ui/react-icons"
 import { useRecoilState } from "recoil"
 
 function Contact() {
@@ -18,7 +18,15 @@ function Contact() {
           <CreateContactDialog />
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-2  ">
-          {contacts && contacts.length === 0 && <p>No contact found</p>}
+          {contacts && contacts.length === 0 && (
+            <div
+              className="border border-border flex flex-col items-center gap-y-5 col-span-5 justify-center w-full p-20"
+            >
+              <CrossCircledIcon className="text-destructive w-20 h-20" />
+
+              <p>No contacts found. Please create a contact.</p>
+            </div>
+          )}
           {contacts && contacts.length > 0 && contacts.map((contact) => (
             <CardContainer key={contact.id}>
               <CardBody
