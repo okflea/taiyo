@@ -31,7 +31,7 @@ function ViewContactDialog({ contact }: Props) {
             Contact Details:
           </DialogDescription>
           <div
-            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-2  "
+            className="grid grid-cols-2 gap-2  "
           >
             <p
               className="text-sm text-secondary"
