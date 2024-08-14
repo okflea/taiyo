@@ -1,5 +1,4 @@
 import ChartMap from "@/pages/Chart-Map";
-import ColorPalette from "@/pages/Colors";
 import Contact from "@/pages/Contact";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 
@@ -16,10 +15,6 @@ const Routes = () => {
       element: <ChartMap />
     },
 
-    {
-      path: "/colors",
-      element: <ColorPalette />
-    },
   ];
 
 
