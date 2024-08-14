@@ -1,3 +1,4 @@
+import NotFound from "@/components/NotFound";
 import ChartMap from "@/pages/Chart-Map";
 import Contact from "@/pages/Contact";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
@@ -15,6 +16,10 @@ const Routes = () => {
       element: <ChartMap />
     },
 
+    {
+      path: "*",
+      element: <NotFound />
+    }
   ];
 
 
