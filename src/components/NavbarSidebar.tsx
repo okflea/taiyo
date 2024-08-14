@@ -12,12 +12,11 @@ const NavbarSidebar = ({ children }: NavbarSidebarProps) => {
       {/* Sidebar */}
       <div className="bg-muted-foreground dark:bg-muted w-36 flex flex-col">
         <div className="h-16 flex items-center justify-center bg-secondary-foreground/40 dark:bg-primary/40 ">
-          <img src='Taiyo-logo.png' alt="logo" className="h-10" />
+          <img src='/Taiyo-logo.png' alt="logo" className="h-10" />
         </div>
         <nav className="flex-1 py-6 space-y-2 font-arvo">
           <Link to="/" className="block py-2.5 text-center  hover:bg-primary/50">Contact</Link>
           <Link to="/charts-maps" className="block py-2.5 text-center  hover:bg-primary/50">Charts & Maps</Link>
-          <Link to="/colors" className="block py-2.5 text-center  hover:bg-primary/50">Colors</Link>
         </nav>
       </div>
 
