@@ -24,7 +24,7 @@ const NavbarSidebar = ({ children }: NavbarSidebarProps) => {
       {/* Main Content Area */}
       <div className="flex-1 flex flex-col">
         {/* Top Bar */}
-        <div className="bg-muted-foreground/80 dark:bg-muted/80  h-16 flex items-center justify-between px-6">
+        <div className="bg-secondary-foreground/30 dark:bg-muted/80  h-16 flex items-center justify-between px-6">
           <h2 className='text-xl text-primary cursor-default font-semibold'>
             {pathname === '/' && "Contact Page"}
             {pathname === '/charts-maps' && "Charts & Map Page"}
