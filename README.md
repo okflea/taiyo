@@ -1,30 +1,42 @@
-# React + TypeScript + Vite
+# 📞 Contact Management App with Charts and Maps 🌍📊
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to the Contact Management App! This project combines a contact management system with a COVID-19 data dashboard featuring charts and maps.
 
-Currently, two official plugins are available:
+## 🚀 Hosted on Netlify
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Live Site:** [https://taiyo-okflea.netlify.app/](https://taiyo-okflea.netlify.app/)
 
-## Expanding the ESLint configuration
+## 🛠️ Features
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### Contact Management
+- **Add New Contacts:** Use the form to add new contact details. ✍️
+- **List Contacts:** View all your contacts in a list. 📜
+- **View Details:** Click to view detailed information about each contact. 🔍
+- **Edit Contact:** Update contact details as needed. ✏️
+- **Delete Contact:** Remove contacts from the list. ❌
 
-- Configure the top-level `parserOptions` property like this:
+### Dashboard
+- **Charts:** A line graph illustrating COVID-19 case fluctuations over time. 📈
+- **Maps:** A React Leaflet map with markers showing country-specific COVID-19 data. 🌍
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json', './tsconfig.app.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+## 🚀 Technologies Used
+- **ReactJS:** Library for building user interfaces. 🧩
+- **TypeScript:** Type-safe JavaScript. 🔒
+- **TailwindCSS:** Utility-first CSS framework for styling. 💅
+- **Shadcn UI:** UI components for building user interfaces. 🎨
+- **React Router v6:** Declarative routing for React applications. 🛤️
+- **React Query:** Data fetching and state management. 🔄
+- **Recoil:** State management for handling contact data. 🔧
+- **React Leaflet:** Leaflet maps integration in React. 🗺️
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## 🌐 API Endpoints
+- **Worldwide Data:** [Disease.sh - Global Cases](https://disease.sh/v3/covid-19/all) 🌏
+- **Country Specific Data:** [Disease.sh - Country Data](https://disease.sh/v3/covid-19/countries) 🏴
+- **Graph Data:** [Disease.sh - Historical Data](https://disease.sh/v3/covid-19/historical/all?lastdays=all) 📉
+
+## 🏗️ Setup and Installation
+
+### Prerequisites
+- Node.js (v16.x or later) 🚀
+- bun or npm or yarn 📦
+
