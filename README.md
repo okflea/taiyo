@@ -28,6 +28,7 @@ Welcome to the Contact Management App! This project combines a contact managemen
 - **React Query:** Data fetching and state management. 🔄
 - **Recoil:** State management for handling contact data. 🔧
 - **React Leaflet:** Leaflet maps integration in React. 🗺️
+- RechartJS: Charting library for React. 📈
 
 ## 🌐 API Endpoints
 - **Worldwide Data:** [Disease.sh - Global Cases](https://disease.sh/v3/covid-19/all) 🌏
