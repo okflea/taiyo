@@ -1,4 +1,3 @@
-import React from 'react';
 import { useQuery } from "@tanstack/react-query"
 import axios from "axios"
 import { toast } from "sonner"
@@ -7,6 +6,7 @@ import 'leaflet/dist/leaflet.css';
 import { Skeleton } from './ui/skeleton';
 import { Button } from './ui/button';
 import { ReloadIcon } from '@radix-ui/react-icons';
+import L from 'leaflet';
 
 interface CountryData {
   country: string;
